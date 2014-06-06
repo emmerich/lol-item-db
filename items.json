@@ -74,7 +74,7 @@
         },
         
         "PERSONAL_AURA": {
-            "fields": ["removedOnDeath"]
+            "fields": ["removed_on_death"]
         }
     },
     
@@ -270,7 +270,7 @@
                 "modifier": "PERSONAL_AURA",
                 "value": {
                     "duration": 5
-                    "removedOnDeath": true,
+                    "removed_on_death": true,
                     "vision_sight_range": null,
                     "magical_sight_range": null
                 }
