@@ -56,7 +56,7 @@
         },
         
         "VISION": {
-            "fields": []
+            "fields": ["duration", "vision_sight_range", "magical_sight_range"]
         }
     },
     
@@ -70,7 +70,11 @@
         },
         
         "STATIC_WARD": {
-            "fields": ["duration", "vision_sight_range", "magical_sight_range"]
+            "fields": []
+        },
+        
+        "PERSONAL_AURA": {
+            "fields": ["removedOnDeath"]
         }
     },
     
@@ -245,6 +249,30 @@
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0
                     }
+                }
+            }]
+        },
+        
+        {
+            "itemCode": 2047,
+            "name": "ORACLES_EXTRACT",
+            "sellValue": 100,
+            "cost": 250,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS"
+            ],
+            "components": [],
+            "effects": [{
+                "type": "VISION",
+                "modifier": "PERSONAL_AURA",
+                "value": {
+                    "duration": 5
+                    "removedOnDeath": true,
+                    "vision_sight_range": null,
+                    "magical_sight_range": null
                 }
             }]
         },
