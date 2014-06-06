@@ -97,7 +97,7 @@
                 "type": "VISION",
                 "modifier": "STATIC_WARD",
                 "value": {
-                    "duration": 3,
+                    "duration": 180,
                     "vision_sight_range": 1100,
                     "magical_sight_range": 0
                 }
@@ -141,7 +141,7 @@
                 "type": "ELIXIR",
                 "modifier": "STACKED_STATISTIC",
                 "value": {
-                    "duration": 3,
+                    "duration": 180,
                     "stack_trigger": "LEVEL_UP",
                     "stacked_statistics": {
                         "ARMOR_PENETRATION_FLAT": 0,
@@ -205,7 +205,7 @@
                 "type": "ELIXIR",
                 "modifier": "STACKED_STATISTIC",
                 "value": {
-                    "duration": 3,
+                    "duration": 180,
                     "stack_trigger": "LEVEL_UP",
                     "stacked_statistics": {
                         "ARMOR_PENETRATION_FLAT": 0,
@@ -269,7 +269,7 @@
                 "type": "VISION",
                 "modifier": "PERSONAL_AURA",
                 "value": {
-                    "duration": 5
+                    "duration": 300
                     "removed_on_death": true,
                     "vision_sight_range": null,
                     "magical_sight_range": null
