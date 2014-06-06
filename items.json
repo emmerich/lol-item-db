@@ -46,7 +46,144 @@
         "ENHANCED_MOVEMENT": {}
     },
     
+    "effect_types": {
+        "NAMED_PASSIVE": {
+            "fields": ["name"]
+        },
+        
+        "ELIXIR": {
+            "fields": ["duration"]
+        },
+        
+        "WARD": {
+            "fields": []
+        }
+    },
+    
+    "effect_modifiers": {
+        "STATISTIC": {
+            "fields": ["statistics"]
+        },
+        
+        "STACKED_STATISTIC": {
+            "fields": ["stack_trigger", "stacked_statistics", "flat_statistics"]  
+        },
+        
+        "STATIC_WARD": {
+            "fields": ["duration", "vision_sight_range", "magical_sight_range"]
+        }
+    },
+    
+    "stack_triggers": {
+        "LEVEL_UP": {}
+    },
+    
     "items": [
+        {
+            "itemCode": 2044,
+            "name": "STEALTH_WARD",
+            "sellValue": 30,
+            "cost": 75,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT"   
+            ],
+            "components": [],
+            "effects": [{
+                "type": "WARD",
+                "modifier": "STATIC_WARD",
+                "value": {
+                    "duration": 3,
+                    "vision_sight_range": 1100,
+                    "magical_sight_range": 0
+                }
+            }]
+        },
+        
+        {
+            "itemCode": 2043,
+            "name": "VISION_WARD",
+            "sellValue": 50,
+            "cost": 100,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT"   
+            ],
+            "components": [],
+            "effects": [{
+                "type": "WARD",
+                "modifier": "STATIC_WARD",
+                "value": {
+                    "duration": 0,
+                    "vision_sight_range": 1100,
+                    "magical_sight_range": 1000
+                }
+            }]
+        },
+        
+        {
+            "itemCode": 2037,
+            "name": "ELIXIR_OF_FORTITUDE",
+            "sellValue": 140,
+            "cost": 350,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "HOWLING_ABYSS"
+            ],
+            "components": [],
+            "effects": [{
+                "type": "ELIXIR",
+                "modifier": "STACKED_STATISTIC",
+                "value": {
+                    "duration": 3,
+                    "stack_trigger": "LEVEL_UP",
+                    "stacked_statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 0,
+                        "ARMOR": 0,
+                        "HEALTH": 6.3888888888888888888888888888889,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0,
+                        "COOLDOWN_REDUCTION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    },
+                    "flat_statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 15,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 0,
+                        "ARMOR": 0,
+                        "HEALTH": 120,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0,
+                        "COOLDOWN_REDUCTION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    }
+                }
+            }]
+        },
+        
         {
             "itemCode": 1001,
             "name": "BOOTS_OF_SPEED",
@@ -57,7 +194,8 @@
                 "DOMINION",
                 "SUMMONERS_RIFT",
                 "TWISTED_TREELINE",
-                "PROVING_GROUNDS"
+                "PROVING_GROUNDS",
+                "HOWLING_ABYSS"
             ],
             "components": [],
             "effects": [
@@ -67,7 +205,8 @@
                     "value": {
                         "name": "ENHANCED_MOVEMENT",
                         "statistics": {
-                            "ARMOR_PENETRATION": 0,
+                            "ARMOR_PENETRATION_FLAT": 0,
+                            "ARMOR_PENETRATION_PERCENTAGE": 0,
                             "ATTACK_DAMAGE": 0,
                             "ATTACK_SPEED": 0,
                             "CRITICAL_STRIKE_CHANCE": 0,
