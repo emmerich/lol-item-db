@@ -36,10 +36,10 @@
     },
     
     "availability": {
-        "DOMINION": {},
         "SUMMONERS_RIFT": {},
         "TWISTED_TREELINE": {},
-        "PROVING_GROUNDS": {}
+        "CRYSTAL_SCAR": {},
+        "HOWLING_ABYSS": {}
     },
         
     "named_passives": {
@@ -129,6 +129,7 @@
             "tier": "CONSUMABLE",
             "availability": [
                 "SUMMONERS_RIFT",
+                "CRYSTAL_SCAR",
                 "HOWLING_ABYSS"
             ],
             "components": [],
