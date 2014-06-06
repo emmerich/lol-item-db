@@ -290,7 +290,15 @@
             ],
             "components": [],
             "effects": [{
-                  
+                "type": "POTION",
+                "modifier": "REGENERATION",
+                "value": {
+                    // charges
+                    // mana regenerated
+                    // health regenerated
+                    // over how much time
+                    // number in inventory
+                }
             }]
         },
         
@@ -308,36 +316,34 @@
                 "HOWLING_ABYSS"
             ],
             "components": [],
-            "effects": [
-                {
-                    "type": "NAMED_PASSIVE",
-                    "modifier": "STATISTIC",
-                    "value": {
-                        "name": "ENHANCED_MOVEMENT",
-                        "statistics": {
-                            "ARMOR_PENETRATION_FLAT": 0,
-                            "ARMOR_PENETRATION_PERCENTAGE": 0,
-                            "ATTACK_DAMAGE": 0,
-                            "ATTACK_SPEED": 0,
-                            "CRITICAL_STRIKE_CHANCE": 0,
-                            "CRITICAL_STRIKE_DAMAGE": 0,
-                            "LIFE_STEAL": 0,
-                            "MOVEMENT_SPEED": 25,
-                            "ARMOR": 0,
-                            "HEALTH": 0,
-                            "HEALTH_REGENERATION": 0,
-                            "MAGIC_RESISTANCE": 0,
-                            "TENACITY": 0,
-                            "ABILITY_POWER": 0,
-                            "COOLDOWN_REDUCATION": 0,
-                            "MAGIC_PENETRATION": 0,
-                            "MANA": 0,
-                            "MANA_REGENERATION": 0,
-                            "SPELL_VAMP": 0
-                        }
+            "effects": [{
+                "type": "NAMED_PASSIVE",
+                "modifier": "STATISTIC",
+                "value": {
+                    "name": "ENHANCED_MOVEMENT",
+                    "statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 25,
+                        "ARMOR": 0,
+                        "HEALTH": 0,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0,
+                        "COOLDOWN_REDUCATION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
                     }
                 }
-            ]
+            }]
         }
     ]
 }
