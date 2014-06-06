@@ -1,0 +1,94 @@
+{
+    "riot_patch_number": "4.9",
+    
+    "statistics": {
+        "ARMOR_PENETRATION_FLAT": {},
+        "ARMOR_PENETRATION_PERCENTAGE": {},
+        "ATTACK_DAMAGE": {},
+        "ATTACK_SPEED": {},
+        "CRITICAL_STRIKE_CHANCE": {},
+        "CRITICAL_STRIKE_DAMAGE": {},
+        "LIFE_STEAL": {},
+        "MOVEMENT_SPEED": {},
+        "ARMOR": {},
+        "HEALTH": {},
+        "HEALTH_REGENERATION": {},
+        "MAGIC_RESISTANCE": {},
+        "TENACITY": {},
+        "ABILITY_POWER": {},
+        "COOLDOWN_REDUCTION": {},
+        "MAGIC_PENETRATION": {},
+        "MANA": {},
+        "MANA_REGENERATION": {},
+        "SPELL_VAMP": {}
+    },
+    
+    "tiers": {
+        "BASIC": {},
+        "ADVANCED": {},
+        "LEGENDARY": {},
+        "MYTHICAL": {},
+        "CONSUMABLE": {},
+        "ENCHANTMENT": {},
+        "BASIC_TRINKET": {},
+        "ADVANCED_TRINKET": {},
+        "RENGARS_TRINKET": {}
+    },
+    
+    "availability": {
+        "DOMINION": {},
+        "SUMMONERS_RIFT": {},
+        "TWISTED_TREELINE": {},
+        "PROVING_GROUNDS": {}
+    },
+        
+    "named_passives": {
+        "ENHANCED_MOVEMENT": {}
+    },
+    
+    "items": [
+        {
+            "itemCode": 1001,
+            "name": "BOOTS_OF_SPEED",
+            "sellValue": 227,
+            "cost": 325,
+            "tier": "BASIC",
+            "availability": [
+                "DOMINION",
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "PROVING_GROUNDS"
+            ],
+            "components": [],
+            "effects": [
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "name": "ENHANCED_MOVEMENT",
+                        "statistics": {
+                            "ARMOR_PENETRATION": 0,
+                            "ATTACK_DAMAGE": 0,
+                            "ATTACK_SPEED": 0,
+                            "CRITICAL_STRIKE_CHANCE": 0,
+                            "CRITICAL_STRIKE_DAMAGE": 0,
+                            "LIFE_STEAL": 0,
+                            "MOVEMENT_SPEED": 25,
+                            "ARMOR": 0,
+                            "HEALTH": 0,
+                            "HEALTH_REGENERATION": 0,
+                            "MAGIC_RESISTANCE": 0,
+                            "TENACITY": 0,
+                            "ABILITY_POWER": 0,
+                            "COOLDOWN_REDUCATION": 0,
+                            "MAGIC_PENETRATION": 0,
+                            "MANA": 0,
+                            "MANA_REGENERATION": 0,
+                            "SPELL_VAMP": 0
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

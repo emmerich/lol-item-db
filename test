@@ -1,0 +1,40 @@
+examples:
+
+,
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "ON_NEARBY_MINION_DEATH",
+                    "value": {
+                        
+                    }
+                }
+                
+                
+                
+                
+            
+            
+            effects: [
+                {
+                    "type": "NAMED_AURA",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "name": "Legion",
+                        "statistics": {
+                            "MAGIC_RESISTANCE": 20
+                        }
+                    }
+                }
+            ]
+            
+            
+            {
+                    "type": "RAW_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            
+                        }
+                    }
+                },

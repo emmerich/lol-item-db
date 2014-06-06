@@ -1,0 +1,11 @@
+{
+    "BASIC": "Basic",
+    "ADVANCED": "Advanced",
+    "LEGENDARY": "Legendary",
+    "MYTHICAL": "Mythical",
+    "CONSUMABLE": "Consumable",
+    "ENCHANTMENT": "Enchantment",
+    "BASIC_TRINKET": "Basic Trinket",
+    "ADVANCED_TRINKET": "Advanced Trinket",
+    "RENGARS_TRINKET": "Rengar's Trinket"
+}

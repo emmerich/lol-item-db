@@ -1,0 +1,21 @@
+{
+    "ARMOR_PENETRATION_FLAT": "Armor Penetration",
+    "ARMOR_PENETRATION_PERCENTAGE": "Armor Penetration",
+    "ATTACK_DAMAGE": "Attack Damage",
+    "ATTACK_SPEED": "Attack Speed",
+    "CRITICAL_STRIKE_CHANCE": "Critical Strike Chance",
+    "CRITICAL_STRIKE_DAMAGE": "Critical Strike Damage",
+    "LIFE_STEAL": "Life Steal",
+    "MOVEMENT_SPEED": "Movement Speed",
+    "ARMOR": "Armor",
+    "HEALTH": "Health",
+    "HEALTH_REGENERATION": "Health Regeneration",
+    "MAGIC_RESISTANCE": "Magic Resistance",
+    "TENACITY": "Tenacity",
+    "ABILITY_POWER": "Ability Power",
+    "COOLDOWN_REDUCTION": "Cooldown Reduction",
+    "MAGIC_PENETRATION": "Magic Penetration",
+    "MANA": "Mana",
+    "MANA_REGENERATION": "Mana Regeneration",
+    "SPELL_VAMP": "Spell Vamp"
+}

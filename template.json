@@ -1,0 +1,38 @@
+{
+    "itemCode": NUMBER,
+    "name": ITEM_NAME_KEY,
+    "sellValue": NUMBER,
+    "cost": NUMBER,
+    "tier": TIER_KEY,
+    "availability": ARRAY OF AVAILABILITY KEYS
+    "components": ARRAY OF ITEM CODES,
+    "effects": ARRAY OF EFFECTS: [
+        {
+            "type": EFFECT TYPE KEY,
+            "modifier": EFFECT MODIFIER KEY,
+            "value": OBJECT RELATING TO EFFECT MODIFIER {
+                "name": "ENHANCED_MOVEMENT",
+                "statistics": {
+                    "ARMOR_PENETRATION": 0,
+                    "ATTACK_DAMAGE": 0,
+                    "ATTACK_SPEED": 0,
+                    "CRITICAL_STRIKE_CHANCE": 0,
+                    "CRITICAL_STRIKE_DAMAGE": 0,
+                    "LIFE_STEAL": 0,
+                    "MOVEMENT_SPEED": 25,
+                    "ARMOR": 0,
+                    "HEALTH": 0,
+                    "HEALTH_REGENERATION": 0,
+                    "MAGIC_RESISTANCE": 0,
+                    "TENACITY": 0,
+                    "ABILITY_POWER": 0,
+                    "COOLDOWN_REDUCATION": 0,
+                    "MAGIC_PENETRATION": 0,
+                    "MANA": 0,
+                    "MANA_REGENERATION": 0,
+                    "SPELL_VAMP": 0
+                }
+            }
+        }
+    ]
+}
