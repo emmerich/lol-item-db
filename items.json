@@ -278,6 +278,23 @@
         },
         
         {
+            "itemCode": 2041,
+            "name": "CRYSTALLINE_FLASK",
+            "sellValue": 138,
+            "cost": 345,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [],
+            "effects": [{
+                  
+            }]
+        },
+        
+        {
             "itemCode": 1001,
             "name": "BOOTS_OF_SPEED",
             "sellValue": 227,
