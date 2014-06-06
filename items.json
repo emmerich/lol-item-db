@@ -55,7 +55,7 @@
             "fields": ["duration"]
         },
         
-        "WARD": {
+        "VISION": {
             "fields": []
         }
     },
@@ -90,7 +90,7 @@
             ],
             "components": [],
             "effects": [{
-                "type": "WARD",
+                "type": "VISION",
                 "modifier": "STATIC_WARD",
                 "value": {
                     "duration": 3,
@@ -111,7 +111,7 @@
             ],
             "components": [],
             "effects": [{
-                "type": "WARD",
+                "type": "VISION",
                 "modifier": "STATIC_WARD",
                 "value": {
                     "duration": 0,
