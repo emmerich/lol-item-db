@@ -186,6 +186,70 @@
         },
         
         {
+            "itemCode": 2039,
+            "name": "ELIXIR_OF_BRILLIANCE",
+            "sellValue": 100,
+            "cost": 250,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS"
+            ],
+            "components": [],
+            "effects": [{
+                "type": "ELIXIR",
+                "modifier": "STACKED_STATISTIC",
+                "value": {
+                    "duration": 3,
+                    "stack_trigger": "LEVEL_UP",
+                    "stacked_statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 0,
+                        "ARMOR": 0,
+                        "HEALTH": 0,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0.83333333333333333333333333333333,
+                        "COOLDOWN_REDUCTION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    },
+                    "flat_statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 0,
+                        "ARMOR": 0,
+                        "HEALTH": 0,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 25,
+                        "COOLDOWN_REDUCTION": 10,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    }
+                }
+            }]
+        },
+        
+        {
             "itemCode": 1001,
             "name": "BOOTS_OF_SPEED",
             "sellValue": 227,
