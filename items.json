@@ -343,6 +343,32 @@
         },
         
         {
+            "itemCode": 2004,
+            "name": "MANA_POTION",
+            "sellValue": 14,
+            "cost": 35,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS",
+            ],
+            "components": [],
+            "effects": [{
+                "type": "POTION",
+                "modifier": "REGENERATION",
+                "value": {
+                    "max_in_bag": 5,
+                    "health_restored": 0,
+                    "mana_restored": 100,
+                    "health_over_seconds": 0,
+                    "mana_over_seconds": 15
+                }
+            }]
+        },
+        
+        {
             "itemCode": 1001,
             "name": "BOOTS_OF_SPEED",
             "sellValue": 227,
