@@ -60,7 +60,11 @@
         },
                     
         "FLASK": {
-            "fields": ["charges", "refills"]   
+            "fields": ["charges", "refills", "max_in_bag"]   
+        },
+        
+        "POTION": {
+            "fields": ["max_in_bag"]
         }
     },
     
@@ -82,7 +86,7 @@
         },
         
         "REGENERATION": {
-            "fields": ["health_restored", "mana_restored", "health_over_seconds", "mana_over_seconds", "max_in_bag"]
+            "fields": ["health_restored", "mana_restored", "health_over_seconds", "mana_over_seconds"]
         }
     },
     
@@ -303,11 +307,37 @@
                 "value": {
                     "charges": 3,
                     "refills": true,
+                    "max_in_bag": 1,
                     "health_restored": 120,
                     "mana_restored": 60,
                     "health_over_seconds": 12,
-                    "mana_over_seconds": 12,
-                    "max_in_bag": 1
+                    "mana_over_seconds": 12
+                }
+            }]
+        },
+        
+        {
+            "itemCode": 2003,
+            "name": "HEALTH_POTION",
+            "sellValue": 14,
+            "cost": 35,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS",
+            ],
+            "components": [],
+            "effects": [{
+                "type": "POTION",
+                "modifier": "REGENERATION",
+                "value": {
+                    "max_in_bag": 5,
+                    "health_restored": 150,
+                    "mana_restored": 0,
+                    "health_over_seconds": 15,
+                    "mana_over_seconds": 0
                 }
             }]
         },
