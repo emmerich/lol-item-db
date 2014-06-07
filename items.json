@@ -57,6 +57,10 @@
         
         "VISION": {
             "fields": ["duration", "vision_sight_range", "magical_sight_range"]
+        },
+                    
+        "FLASK": {
+            "fields": ["charges", "refills"]   
         }
     },
     
@@ -75,6 +79,10 @@
         
         "PERSONAL_AURA": {
             "fields": ["removed_on_death"]
+        },
+        
+        "REGENERATION": {
+            "fields": ["health_restored", "mana_restored", "health_over_seconds", "mana_over_seconds", "max_in_bag"]
         }
     },
     
@@ -290,14 +298,16 @@
             ],
             "components": [],
             "effects": [{
-                "type": "POTION",
+                "type": "FLASK",
                 "modifier": "REGENERATION",
                 "value": {
-                    // charges
-                    // mana regenerated
-                    // health regenerated
-                    // over how much time
-                    // number in inventory
+                    "charges": 3,
+                    "refills": true,
+                    "health_restored": 120,
+                    "mana_restored": 60,
+                    "health_over_seconds": 12,
+                    "mana_over_seconds": 12,
+                    "max_in_bag": 1
                 }
             }]
         },
