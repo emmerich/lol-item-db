@@ -21,7 +21,9 @@
         "MANA": {},
         "MANA_REGENERATION": {},
         "SPELL_VAMP": {},
-        "SLOW_RESIST": {}
+        "SLOW_RESIST": {},
+        "BASIC_ATTACK_PERCENTAGE_BLOCK": {},
+        "BASIC_ATTACK_FLAT_BLOCK": {}
     },
     
     "tiers": {
@@ -190,7 +192,9 @@
                         "MANA": 0,
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0,
-                        "SLOW_RESIST": 0
+                        "SLOW_RESIST": 0,
+                        "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                        "BASIC_ATTACK_FLAT_BLOCK": 0
                     },
                     "flat_statistics": {
                         "ARMOR_PENETRATION_FLAT": 0,
@@ -212,7 +216,9 @@
                         "MANA": 0,
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0,
-                        "SLOW_RESIST": 0
+                        "SLOW_RESIST": 0,
+                        "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                        "BASIC_ATTACK_FLAT_BLOCK": 0
                     }
                 }
             }]
@@ -459,7 +465,9 @@
                         "MANA": 0,
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0,
-                        "SLOW_RESIST": 0
+                        "SLOW_RESIST": 0,
+                        "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                        "BASIC_ATTACK_FLAT_BLOCK": 0
                     }
                 }
             }]
@@ -505,7 +513,9 @@
                         "MANA": 0,
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0,
-                        "SLOW_RESIST": 0
+                        "SLOW_RESIST": 0,
+                        "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                        "BASIC_ATTACK_FLAT_BLOCK": 0
                     }
                 }
             },
@@ -535,7 +545,9 @@
                         "MANA": 0,
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0,
-                        "SLOW_RESIST": 0
+                        "SLOW_RESIST": 0,
+                        "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                        "BASIC_ATTACK_FLAT_BLOCK": 0
                     }
                 }
             }]
@@ -581,7 +593,9 @@
                         "MANA": 0,
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0,
-                        "SLOW_RESIST": 0
+                        "SLOW_RESIST": 0,
+                        "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                        "BASIC_ATTACK_FLAT_BLOCK": 0
                     },
                     
                     "increased_statistics": {
@@ -604,7 +618,9 @@
                         "MANA": 0,
                         "MANA_REGENERATION": 0,
                         "SPELL_VAMP": 0,
-                        "SLOW_RESIST": 0
+                        "SLOW_RESIST": 0,
+                        "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                        "BASIC_ATTACK_FLAT_BLOCK": 0
                     }
                 }
             }]
@@ -649,7 +665,9 @@
                             "MANA": 0,
                             "MANA_REGENERATION": 0,
                             "SPELL_VAMP": 0,
-                            "SLOW_RESIST": 0
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
                         }
                     }
                 },
@@ -678,7 +696,9 @@
                             "MANA": 0,
                             "MANA_REGENERATION": 0,
                             "SPELL_VAMP": 0,
-                            "SLOW_RESIST": 25
+                            "SLOW_RESIST": 25,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
                         }
                     }
                 }
@@ -724,7 +744,9 @@
                             "MANA": 0,
                             "MANA_REGENERATION": 0,
                             "SPELL_VAMP": 0,
-                            "SLOW_RESIST": 0
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
                         }
                     }
                 },
@@ -752,7 +774,9 @@
                             "MANA": 0,
                             "MANA_REGENERATION": 0,
                             "SPELL_VAMP": 0,
-                            "SLOW_RESIST": 0
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
                         }
                     }
                 }
@@ -798,7 +822,9 @@
                             "MANA": 0,
                             "MANA_REGENERATION": 0,
                             "SPELL_VAMP": 0,
-                            "SLOW_RESIST": 0
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
                         }
                     }
                 },
@@ -827,7 +853,147 @@
                             "MANA": 0,
                             "MANA_REGENERATION": 0,
                             "SPELL_VAMP": 0,
-                            "SLOW_RESIST": 0
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
+                        }
+                    }
+                },
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "ARMOR_PENETRATION_FLAT": 0,
+                            "ARMOR_PENETRATION_PERCENTAGE": 0,
+                            "ATTACK_DAMAGE": 0,
+                            "ATTACK_SPEED": 0,
+                            "CRITICAL_STRIKE_CHANCE": 0,
+                            "CRITICAL_STRIKE_DAMAGE": 0,
+                            "LIFE_STEAL": 0,
+                            "MOVEMENT_SPEED": 0,
+                            "ARMOR": 0,
+                            "HEALTH": 0,
+                            "HEALTH_REGENERATION": 0,
+                            "MAGIC_RESISTANCE": 25,
+                            "TENACITY": 0,
+                            "ABILITY_POWER": 0,
+                            "COOLDOWN_REDUCATION": 0,
+                            "MAGIC_PENETRATION": 0,
+                            "MANA": 0,
+                            "MANA_REGENERATION": 0,
+                            "SPELL_VAMP": 0,
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
+                        }
+                    }
+                }
+            ]
+        },
+        
+        {
+            "itemCode": 3047,
+            "name": "NINJA_TABI",
+            "sellValue": 700,
+            "cost": 375,
+            "tier": "ADVANCED",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS"
+            ],
+            "components": [1001, "PLACEHOLDER_CLOTHARMOR"],
+            "effects": [
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "name": "ENHANCED_MOVEMENT",
+                        "statistics": {
+                            "ARMOR_PENETRATION_FLAT": 0,
+                            "ARMOR_PENETRATION_PERCENTAGE": 0,
+                            "ATTACK_DAMAGE": 0,
+                            "ATTACK_SPEED": 0,
+                            "CRITICAL_STRIKE_CHANCE": 0,
+                            "CRITICAL_STRIKE_DAMAGE": 0,
+                            "LIFE_STEAL": 0,
+                            "MOVEMENT_SPEED": 45,
+                            "ARMOR": 0,
+                            "HEALTH": 0,
+                            "HEALTH_REGENERATION": 0,
+                            "MAGIC_RESISTANCE": 0,
+                            "TENACITY": 0,
+                            "ABILITY_POWER": 0,
+                            "COOLDOWN_REDUCATION": 0,
+                            "MAGIC_PENETRATION": 0,
+                            "MANA": 0,
+                            "MANA_REGENERATION": 0,
+                            "SPELL_VAMP": 0,
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
+                        }
+                    }
+                },
+                {
+                    "type": "UNIQUE_PASSIVE",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "ARMOR_PENETRATION_FLAT": 0,
+                            "ARMOR_PENETRATION_PERCENTAGE": 0,
+                            "ATTACK_DAMAGE": 0,
+                            "ATTACK_SPEED": 0,
+                            "CRITICAL_STRIKE_CHANCE": 0,
+                            "CRITICAL_STRIKE_DAMAGE": 0,
+                            "LIFE_STEAL": 0,
+                            "MOVEMENT_SPEED": 0,
+                            "ARMOR": 0,
+                            "HEALTH": 0,
+                            "HEALTH_REGENERATION": 0,
+                            "MAGIC_RESISTANCE": 0,
+                            "TENACITY": 0,
+                            "ABILITY_POWER": 0,
+                            "COOLDOWN_REDUCATION": 0,
+                            "MAGIC_PENETRATION": 0,
+                            "MANA": 0,
+                            "MANA_REGENERATION": 0,
+                            "SPELL_VAMP": 0,
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 10,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
+                        }
+                    }
+                },
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "ARMOR_PENETRATION_FLAT": 0,
+                            "ARMOR_PENETRATION_PERCENTAGE": 0,
+                            "ATTACK_DAMAGE": 0,
+                            "ATTACK_SPEED": 0,
+                            "CRITICAL_STRIKE_CHANCE": 0,
+                            "CRITICAL_STRIKE_DAMAGE": 0,
+                            "LIFE_STEAL": 0,
+                            "MOVEMENT_SPEED": 0,
+                            "ARMOR": 25,
+                            "HEALTH": 0,
+                            "HEALTH_REGENERATION": 0,
+                            "MAGIC_RESISTANCE": 0,
+                            "TENACITY": 0,
+                            "ABILITY_POWER": 0,
+                            "COOLDOWN_REDUCATION": 0,
+                            "MAGIC_PENETRATION": 0,
+                            "MANA": 0,
+                            "MANA_REGENERATION": 0,
+                            "SPELL_VAMP": 0,
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
                         }
                     }
                 }
