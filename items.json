@@ -51,6 +51,10 @@
             "fields": ["name"]
         },
         
+        "FLAT_STATISTICS": {
+            "fields": []
+        },
+        
         "ELIXIR": {
             "fields": ["duration"]
         },
@@ -401,7 +405,7 @@
                 }
             }]
         },
-        
+            
         {
             "itemCode": 1001,
             "name": "BOOTS_OF_SPEED",
@@ -409,10 +413,9 @@
             "cost": 325,
             "tier": "BASIC",
             "availability": [
-                "DOMINION",
                 "SUMMONERS_RIFT",
                 "TWISTED_TREELINE",
-                "PROVING_GROUNDS",
+                "CRYSTAL_SCAR",
                 "HOWLING_ABYSS"
             ],
             "components": [],
@@ -444,6 +447,80 @@
                     }
                 }
             }]
-        }
+        },
+        
+        {
+            "itemCode": 3006,
+            "name": "BERSERKERS_GREAVES",
+            "sellValue": 630,
+            "cost": 175,
+            "tier": "ADVANCED",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS"
+            ],
+            "components": [
+                1001,
+                PLACEHOLDER_DAGGER
+            ],
+            "effects": [{
+                "type": "FLAT_STATISTICS",
+                "modifier": "STATISTIC",
+                "value": {
+                    "statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 20,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 0,
+                        "ARMOR": 0,
+                        "HEALTH": 0,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0,
+                        "COOLDOWN_REDUCTION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    }
+                }
+            },
+                       
+            {
+                "type": "NAMED_PASSIVE",
+                "modifier": "STATISTIC",
+                "value": {
+                    "name": "ENHANCED_MOVEMENT",
+                    "statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 45,
+                        "ARMOR": 0,
+                        "HEALTH": 0,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0,
+                        "COOLDOWN_REDUCATION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    }
+                }
+            }]
+        }   
     ]
 }
