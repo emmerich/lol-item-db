@@ -86,7 +86,7 @@
         },
         
         "REGENERATION": {
-            "fields": ["health_restored", "mana_restored", "health_over_seconds", "mana_over_seconds"]
+            "fields": ["health_restored_over_time", "mana_restored_over_time", "health_restored_duration", "mana_restored_duration", "instant_health_restored", "instant_mana_restored"]
         }
     },
     
@@ -308,10 +308,12 @@
                     "charges": 3,
                     "refills": true,
                     "max_in_bag": 1,
-                    "health_restored": 120,
-                    "mana_restored": 60,
-                    "health_over_seconds": 12,
-                    "mana_over_seconds": 12
+                    "health_restored_over_time": 120,
+                    "mana_restored_over_time": 60,
+                    "health_restored_duration": 12,
+                    "mana_restored_duration": 12,
+                    "instant_health_restored": 0,
+                    "instant_mana_restored": 0
                 }
             }]
         },
@@ -326,7 +328,7 @@
                 "SUMMONERS_RIFT",
                 "TWISTED_TREELINE",
                 "CRYSTAL_SCAR",
-                "HOWLING_ABYSS",
+                "HOWLING_ABYSS"
             ],
             "components": [],
             "effects": [{
@@ -334,10 +336,12 @@
                 "modifier": "REGENERATION",
                 "value": {
                     "max_in_bag": 5,
-                    "health_restored": 150,
-                    "mana_restored": 0,
-                    "health_over_seconds": 15,
-                    "mana_over_seconds": 0
+                    "health_restored_over_time": 150,
+                    "mana_restored_over_time": 0,
+                    "health_restored_duration": 15,
+                    "mana_restored_duration": 0,
+                    "instant_health_restored": 0,
+                    "instant_mana_restored": 0
                 }
             }]
         },
@@ -352,7 +356,7 @@
                 "SUMMONERS_RIFT",
                 "TWISTED_TREELINE",
                 "CRYSTAL_SCAR",
-                "HOWLING_ABYSS",
+                "HOWLING_ABYSS"
             ],
             "components": [],
             "effects": [{
@@ -360,10 +364,40 @@
                 "modifier": "REGENERATION",
                 "value": {
                     "max_in_bag": 5,
-                    "health_restored": 0,
-                    "mana_restored": 100,
-                    "health_over_seconds": 0,
-                    "mana_over_seconds": 15
+                    "health_restored_over_time": 0,
+                    "mana_restored_over_time": 100,
+                    "health_restored_duration": 0,
+                    "mana_restored_duration": 15,
+                    "instant_health_restored": 0,
+                    "instant_mana_restored": 0
+                }
+            }]
+        },
+        
+        {
+            "itemCode": 2010,
+            "name": "TOTAL_BISCUIT_OF_REJUVENATION",
+            "sellValue": 14,
+            "cost": 35,
+            "tier": "CONSUMABLE",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS"
+            ],
+            "components": [],
+            "effects": [{
+                "type": "POTION",
+                "modifier": "REGENERATION",
+                "value": {
+                    "max_in_bag": 5,
+                    "health_restored_over_time": 150,
+                    "mana_restored_over_time": 0,
+                    "health_restored_duration": 15,
+                    "mana_restored_duration": 0,
+                    "instant_health_restored": 20,
+                    "instant_mana_restored": 10
                 }
             }]
         },
