@@ -81,6 +81,10 @@
             "fields": ["stack_trigger", "stacked_statistics", "flat_statistics"]  
         },
         
+        "STATISTICS_INCREASING_AFTER_NO_COMBAT": {
+            "fields": ["flat_statistics", "increased_statistics", "duration_of_no_combat"]  
+        },
+        
         "STATIC_WARD": {
             "fields": []
         },
@@ -285,7 +289,7 @@
                 "type": "VISION",
                 "modifier": "PERSONAL_AURA",
                 "value": {
-                    "duration": 300
+                    "duration": 300,
                     "removed_on_death": true,
                     "vision_sight_range": null,
                     "magical_sight_range": null
@@ -463,7 +467,7 @@
             ],
             "components": [
                 1001,
-                PLACEHOLDER_DAGGER
+                "PLACEHOLDER_DAGGER"
             ],
             "effects": [{
                 "type": "FLAT_STATISTICS",
@@ -521,6 +525,73 @@
                     }
                 }
             }]
-        }   
+        },
+        
+        {
+            "itemCode": 3117,
+            "name": "BOOTS_OF_MOBILITY",
+            "sellValue": 560,
+            "cost": 475,
+            "tier": "ADVANCED",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "CRYSTAL_SCAR",
+                "HOWLING_ABYSS"
+            ],
+            "components": [1001],
+            "effects": [{
+                "type": "NAMED_PASSIVE",
+                "modifier": "STATISTICS_INCREASING_AFTER_NO_COMBAT",
+                "value": {
+                    "name": "ENHANCED_MOVEMENT",
+                    "duration_of_no_combat": 5,
+                    
+                    "flat_statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 25,
+                        "ARMOR": 0,
+                        "HEALTH": 0,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0,
+                        "COOLDOWN_REDUCATION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    },
+                    
+                    "increased_statistics": {
+                        "ARMOR_PENETRATION_FLAT": 0,
+                        "ARMOR_PENETRATION_PERCENTAGE": 0,
+                        "ATTACK_DAMAGE": 0,
+                        "ATTACK_SPEED": 0,
+                        "CRITICAL_STRIKE_CHANCE": 0,
+                        "CRITICAL_STRIKE_DAMAGE": 0,
+                        "LIFE_STEAL": 0,
+                        "MOVEMENT_SPEED": 105,
+                        "ARMOR": 0,
+                        "HEALTH": 0,
+                        "HEALTH_REGENERATION": 0,
+                        "MAGIC_RESISTANCE": 0,
+                        "TENACITY": 0,
+                        "ABILITY_POWER": 0,
+                        "COOLDOWN_REDUCATION": 0,
+                        "MAGIC_PENETRATION": 0,
+                        "MANA": 0,
+                        "MANA_REGENERATION": 0,
+                        "SPELL_VAMP": 0
+                    }
+                }
+            }]
+        }
     ]
 }

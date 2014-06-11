@@ -1,5 +1,4 @@
 {
-    "BOOTS_OF_SPEED": "Boots of Speed",
     "STEALTH_WARD": "Stealth Ward",
     "VISION_WARD": "Vision Ward",
     "ELIXIR_OF_FORTITUDE": "Elixir of Fortitude",
@@ -9,5 +8,7 @@
     "HEALTH_POTION": "Health Potion",
     "MANA_POTION": "Mana Potion",
     "TOTAL_BISCUIT_OF_REJUVENATION": "Total Biscuit of Rejuvenation",
-    "BERSERKERS_GREAVES": "Berserker's Greaves"
+    "BOOTS_OF_SPEED": "Boots of Speed",
+    "BERSERKERS_GREAVES": "Berserker's Greaves",
+    "BOOTS_OF_MOBILITY": "Boots of Mobility"
 }
