@@ -30,7 +30,10 @@
                     "MAGIC_PENETRATION": 0,
                     "MANA": 0,
                     "MANA_REGENERATION": 0,
-                    "SPELL_VAMP": 0
+                    "SPELL_VAMP": 0,
+                    "SLOW_RESIST": 0,
+                    "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                    "BASIC_ATTACK_FLAT_BLOCK": 0
                 }
             }
         }
