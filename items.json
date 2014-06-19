@@ -1,5 +1,5 @@
 {
-    "riot_patch_number": "4.9",
+    "riot_patch_number": "4.10",
     
     "statistics": {
         "ARMOR_PENETRATION_FLAT": {},
@@ -476,8 +476,8 @@
         {
             "itemCode": 3006,
             "name": "BERSERKERS_GREAVES",
-            "sellValue": 630,
-            "cost": 175,
+            "sellValue": 700,
+            "cost": 225,
             "tier": "ADVANCED",
             "availability": [
                 "SUMMONERS_RIFT",
@@ -497,7 +497,7 @@
                         "ARMOR_PENETRATION_FLAT": 0,
                         "ARMOR_PENETRATION_PERCENTAGE": 0,
                         "ATTACK_DAMAGE": 0,
-                        "ATTACK_SPEED": 20,
+                        "ATTACK_SPEED": 25,
                         "CRITICAL_STRIKE_CHANCE": 0,
                         "CRITICAL_STRIKE_DAMAGE": 0,
                         "LIFE_STEAL": 0,
