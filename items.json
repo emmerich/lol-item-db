@@ -48,7 +48,8 @@
     "named_passives": {
         "ENHANCED_MOVEMENT": {},
         "SLOW_RESIST": {},
-        "TENACITY": {}
+        "TENACITY": {},
+        "FAVOR": {}
     },
     
     "effect_types": {
@@ -77,11 +78,15 @@
         },
                     
         "FLASK": {
-            "fields": ["charges", "refills", "max_in_bag"]   
+            "fields": ["charges", "refills"]   
         },
         
         "POTION": {
-            "fields": ["max_in_bag"]
+            "fields": []
+        },
+        
+        "ITEM_RESTRAINT": {
+            "fields": []   
         }
     },
     
@@ -116,11 +121,27 @@
         
         "CHAMPION_BASIC_ATTACK_BLOCK": {
             "fields": ["amount_blocked"]
+        },
+        
+        "NEAR_MINION_DEATH_WITHOUT_KILLING_BLOW_BONUS": {
+            "fields": ["gold_granted", "health_restored"]
+        },
+        
+        "MAX_ITEMS_PER_TYPE": {
+            "fields": ["type", "max_number"]
+        },
+        
+        "MAX_NUMBER_IN_BAG": {
+            "fields": ["max_number"]
         }
     },
     
     "stack_triggers": {
         "LEVEL_UP": {}
+    },
+    
+    "item_types": {
+        "GOLD_INCOME": {}
     },
     
     "items": [
@@ -338,21 +359,29 @@
                 "CRYSTAL_SCAR"
             ],
             "components": [],
-            "effects": [{
-                "type": "FLASK",
-                "modifier": "REGENERATION",
-                "value": {
-                    "charges": 3,
-                    "refills": true,
-                    "max_in_bag": 1,
-                    "health_restored_over_time": 120,
-                    "mana_restored_over_time": 60,
-                    "health_restored_duration": 12,
-                    "mana_restored_duration": 12,
-                    "instant_health_restored": 0,
-                    "instant_mana_restored": 0
+            "effects": [
+                {
+                    "type": "FLASK",
+                    "modifier": "REGENERATION",
+                    "value": {
+                        "charges": 3,
+                        "refills": true,
+                        "health_restored_over_time": 120,
+                        "mana_restored_over_time": 60,
+                        "health_restored_duration": 12,
+                        "mana_restored_duration": 12,
+                        "instant_health_restored": 0,
+                        "instant_mana_restored": 0
+                    }
+                },
+                {
+                     "type": "ITEM_RESTRAINT",
+                    "modifier": "MAX_NUMBER_IN_BAG",
+                    "value": {
+                        "max_number": 1
+                    }
                 }
-            }]
+            ]
         },
         
         {
@@ -368,19 +397,27 @@
                 "HOWLING_ABYSS"
             ],
             "components": [],
-            "effects": [{
-                "type": "POTION",
-                "modifier": "REGENERATION",
-                "value": {
-                    "max_in_bag": 5,
-                    "health_restored_over_time": 150,
-                    "mana_restored_over_time": 0,
-                    "health_restored_duration": 15,
-                    "mana_restored_duration": 0,
-                    "instant_health_restored": 0,
-                    "instant_mana_restored": 0
+            "effects": [
+                {
+                    "type": "POTION",
+                    "modifier": "REGENERATION",
+                    "value": {
+                        "health_restored_over_time": 150,
+                        "mana_restored_over_time": 0,
+                        "health_restored_duration": 15,
+                        "mana_restored_duration": 0,
+                        "instant_health_restored": 0,
+                        "instant_mana_restored": 0
+                    }
+                },
+                {
+                    "type": "ITEM_RESTRAINT",
+                    "modifier": "MAX_NUMBER_IN_BAG",
+                    "value": {
+                        "max_number": 5
+                    }
                 }
-            }]
+            ]
         },
         
         {
@@ -396,19 +433,27 @@
                 "HOWLING_ABYSS"
             ],
             "components": [],
-            "effects": [{
-                "type": "POTION",
-                "modifier": "REGENERATION",
-                "value": {
-                    "max_in_bag": 5,
-                    "health_restored_over_time": 0,
-                    "mana_restored_over_time": 100,
-                    "health_restored_duration": 0,
-                    "mana_restored_duration": 15,
-                    "instant_health_restored": 0,
-                    "instant_mana_restored": 0
+            "effects": [
+                {
+                    "type": "POTION",
+                    "modifier": "REGENERATION",
+                    "value": {
+                        "health_restored_over_time": 0,
+                        "mana_restored_over_time": 100,
+                        "health_restored_duration": 0,
+                        "mana_restored_duration": 15,
+                        "instant_health_restored": 0,
+                        "instant_mana_restored": 0
+                    }
+                },
+                {
+                    "type": "ITEM_RESTRAINT",
+                    "modifier": "MAX_NUMBER_IN_BAG",
+                    "value": {
+                        "max_number": 5
+                    }
                 }
-            }]
+           ]
         },
         
         {
@@ -424,19 +469,27 @@
                 "HOWLING_ABYSS"
             ],
             "components": [],
-            "effects": [{
-                "type": "POTION",
-                "modifier": "REGENERATION",
-                "value": {
-                    "max_in_bag": 5,
-                    "health_restored_over_time": 150,
-                    "mana_restored_over_time": 0,
-                    "health_restored_duration": 15,
-                    "mana_restored_duration": 0,
-                    "instant_health_restored": 20,
-                    "instant_mana_restored": 10
+            "effects": [
+                {
+                    "type": "POTION",
+                    "modifier": "REGENERATION",
+                    "value": {
+                        "health_restored_over_time": 150,
+                        "mana_restored_over_time": 0,
+                        "health_restored_duration": 15,
+                        "mana_restored_duration": 0,
+                        "instant_health_restored": 20,
+                        "instant_mana_restored": 10
+                    }
+                },
+                {
+                    "type": "ITEM_RESTRAINT",
+                    "modifier": "MAX_NUMBER_IN_BAG",
+                    "value": {
+                        "max_number": 5
+                    }
                 }
-            }]
+            ]
         },
             
         {
@@ -1240,6 +1293,72 @@
                     "modifier": "CHAMPION_BASIC_ATTACK_BLOCK",
                     "value": {
                         "amount_blocked": 8
+                    }
+                }
+            ]
+        },
+        
+        {
+            "itemCode": 3301,
+            "name": "ANCIENT_COIN",
+            "sellValue": 146,
+            "cost": 365,
+            "tier": "BASIC",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [],
+            "effects": [
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "ARMOR_PENETRATION_FLAT": 0,
+                            "ARMOR_PENETRATION_PERCENTAGE": 0,
+                            "ATTACK_DAMAGE": 0,
+                            "ATTACK_SPEED": 0,
+                            "CRITICAL_STRIKE_CHANCE": 0,
+                            "CRITICAL_STRIKE_DAMAGE": 0,
+                            "LIFE_STEAL": 0,
+                            "MOVEMENT_SPEED": 0,
+                            "ARMOR": 0,
+                            "HEALTH": 0,
+                            "HEALTH_REGENERATION": 0,
+                            "MAGIC_RESISTANCE": 0,
+                            "TENACITY": 0,
+                            "ABILITY_POWER": 0,
+                            "COOLDOWN_REDUCATION": 0,
+                            "MAGIC_PENETRATION": 0,
+                            "MANA": 0,
+                            "MANA_REGENERATION": 3,
+                            "SPELL_VAMP": 0,
+                            "SLOW_RESIST": 0,
+                            "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
+                            "BASIC_ATTACK_FLAT_BLOCK": 0
+                        }
+                    }
+                },
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "NEAR_MINION_DEATH_WITHOUT_KILLING_BLOW_BONUS",
+                    "value": {
+                        "name": "FAVOR",
+                        "gold_granted": 2,
+                        "health_restored": 5
+                    }
+                },
+                
+                {
+                    "type": "ITEM_RESTRAINT",
+                    "modifier": "MAX_ITEMS_PER_TYPE",
+                    "value": {
+                        "type": "GOLD_INCOME",
+                        "max_number": 1
                     }
                 }
             ]
