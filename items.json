@@ -49,7 +49,9 @@
         "ENHANCED_MOVEMENT": {},
         "SLOW_RESIST": {},
         "TENACITY": {},
-        "FAVOR": {}
+        "FAVOR": {},
+        "BUTCHER": {},
+        "MAIM": {}
     },
     
     "effect_types": {
@@ -133,6 +135,14 @@
         
         "MAX_NUMBER_IN_BAG": {
             "fields": ["max_number"]
+        }
+        
+        "INCREASED_DAMAGE_TO_MONSTERS": {
+            "fields": ["percentage_modifier", "flat_modifier"],
+        },
+    
+        "MAGIC_DAMAGE_AND_HEALTH_RESTORED_AGAINST_MONSTERS": {
+            "fields": ["magic_damage_done", "health_restored"]
         }
     },
     
@@ -1827,6 +1837,41 @@
                             "BASIC_ATTACK_PERCENTAGE_BLOCK": 0,
                             "BASIC_ATTACK_FLAT_BLOCK": 0
                         }
+                    }
+                }
+            ]
+        },
+        
+        {
+            "itemCode": 1039,
+            "name": "HUNTERS_MACHETE",
+            "sellValue": 120,
+            "cost": 300,
+            "tier": "BASIC",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS"
+            ],
+            "components": [],
+            "effects": [
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "INCREASED_DAMAGE_TO_MONSTERS",
+                    "value": {
+                        "name": "BUTCHER",
+                        "percentage_modifier": 10,
+                        "flat_modifier": 0
+                    }
+                },
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "MAGIC_DAMAGE_AND_HEALTH_RESTORED_AGAINST_MONSTERS",
+                    "value": {
+                        "name": "MAIM",
+                        "magic_damage_done": 10,
+                        "health_restored": 5
                     }
                 }
             ]
