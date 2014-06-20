@@ -53,7 +53,8 @@
         "FAVOR": {},
         "BUTCHER": {},
         "MAIM": {},
-        "TRIBUTE": {}
+        "TRIBUTE": {},
+        "SPOILS_OF_WAR": {}
     },
     
     "effect_types": {
@@ -149,6 +150,10 @@
         
         "BONUS_ON_CHAMPION_OR_STRUCTURE_HIT": {
             "fields": ["affects_abilities", "affects_autoattacks", "additional_damage", "gold_granted", "maximum_charges", "seconds_per_charge", "killing_minion_disable_time"]
+        },
+        
+        "MINION_AUTO_ATTACK_EXECUTE_AND_FRIENDLY_HEAL": {
+            "fields": ["health_required_for_execute", "health_required_for_execute_AD_modifier", "nearest_champion_heal", "maximum_charges", "recharge_time"]
         }
     },
     
@@ -1429,6 +1434,54 @@
                         "maximum_charges": 3,
                         "seconds_per_charge": 10,
                         "killing_minion_disable_time": 12
+                    }
+                },
+                
+                {
+                    "type": "ITEM_RESTRAINT",
+                    "modifier": "MAX_ITEMS_PER_TYPE",
+                    "value": {
+                        "type": "GOLD_INCOME",
+                        "max_number": 1
+                    }
+                }
+            ]
+        },
+        
+        {   
+            "itemCode": 3302,
+            "name": "RELIC_SHIELD",
+            "sellValue": 146,
+            "cost": 365,
+            "tier": "BASIC",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [],
+            "effects": [
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "HEALTH": 75
+                        }
+                    }
+                },
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "MINION_AUTO_ATTACK_EXECUTE_AND_FRIENDLY_HEAL",
+                    "value": {
+                        "name": "SPOILS_OF_WAR",
+                        "health_required_for_execute": 200,
+                        "health_required_for_execute_AD_modifier": 100,
+                        "nearest_champion_heal": 40,
+                        "maximum_charges": 2,
+                        "recharge_time": 60
                     }
                 },
                 
