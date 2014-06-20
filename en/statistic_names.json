@@ -21,5 +21,6 @@
     "SLOW_RESIST": "Slow Resist",
     "BASIC_ATTACK_PERCENTAGE_BLOCK": "Basic Attack % Block",
     "BASIC_ATTACK_FLAT_BLOCK": "Basic Attack Block",
-    "GOLD_PER_10": "Gold per 10 seconds"
+    "GOLD_PER_10": "Gold per 10 seconds",
+    "MOVEMENT_SPEED_PERCENTAGE": "Movement Speed %"
 }

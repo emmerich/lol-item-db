@@ -24,7 +24,8 @@
         "SLOW_RESIST": { "default": 0 },
         "BASIC_ATTACK_PERCENTAGE_BLOCK": { "default": 0 },
         "BASIC_ATTACK_FLAT_BLOCK": { "default": 0 },
-        "GOLD_PER_10": { "default": 0 }
+        "GOLD_PER_10": { "default": 0 },
+        "MOVEMENT_SPEED_PERCENTAGE": { "default": 0 }
     },
     
     "tiers": {
@@ -1535,6 +1536,42 @@
                             "HEALTH_REGENERATION": 10
                         },
                         "range": 1100
+                    }
+                }
+            ]
+        },
+        
+        {   
+            "itemCode": null,
+            "name": "AETHER_WISP",
+            "sellValue": 665,
+            "cost": 515,
+            "tier": "ADVANCED",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [1052],
+            "effects": [
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "ABILITY_POWER": 30
+                        }
+                    }
+                },
+                
+                {
+                    "type": "UNIQUE_PASSIVE",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "MOVEMENT_SPEED_PERCENTAGE": 20
+                        }
                     }
                 }
             ]
