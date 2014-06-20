@@ -54,7 +54,8 @@
         "BUTCHER": {},
         "MAIM": {},
         "TRIBUTE": {},
-        "SPOILS_OF_WAR": {}
+        "SPOILS_OF_WAR": {},
+        "LEGION": {}
     },
     
     "effect_types": {
@@ -112,7 +113,7 @@
             "fields": []
         },
         
-        "PERSONAL_AURA": {
+        "PERSONAL_VISION_AURA": {
             "fields": ["removed_on_death"]
         },
         
@@ -154,6 +155,10 @@
         
         "MINION_AUTO_ATTACK_EXECUTE_AND_FRIENDLY_HEAL": {
             "fields": ["health_required_for_execute", "health_required_for_execute_AD_modifier", "nearest_champion_heal", "maximum_charges", "recharge_time"]
+        },
+        
+        "PERSONAL_STATISTIC_AURA": {
+            "fields": ["statistics", "range"]   
         }
     },
     
@@ -280,7 +285,7 @@
             "components": [],
             "effects": [{
                 "type": "VISION",
-                "modifier": "PERSONAL_AURA",
+                "modifier": "PERSONAL_VISION_AURA",
                 "value": {
                     "duration": 300,
                     "removed_on_death": true,
@@ -473,8 +478,7 @@
                 "HOWLING_ABYSS"
             ],
             "components": [
-                1001,
-                "PLACEHOLDER_DAGGER"
+                1001, 1042
             ],
             "effects": [{
                 "type": "FLAT_STATISTICS",
@@ -614,7 +618,7 @@
                 "CRYSTAL_SCAR",
                 "HOWLING_ABYSS"
             ],
-            "components": [1001, "PLACEHOLDER_NULLMAGICMANTLE"],
+            "components": [1001, 1033],
             "effects": [
                 {
                     "type": "NAMED_PASSIVE",
@@ -660,7 +664,7 @@
                 "CRYSTAL_SCAR",
                 "HOWLING_ABYSS"
             ],
-            "components": [1001, "PLACEHOLDER_CLOTHARMOR"],
+            "components": [1001, 1029],
             "effects": [
                 {
                     "type": "NAMED_PASSIVE",
@@ -1491,6 +1495,46 @@
                     "value": {
                         "type": "GOLD_INCOME",
                         "max_number": 1
+                    }
+                }
+            ]
+        },
+        
+        {   
+            "itemCode": 3105,
+            "name": "AEGIS_OF_THE_LEGION",
+            "sellValue": 1330,
+            "cost": 600,
+            "tier": "ADVANCED",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [1006, 1028, 1057],
+            "effects": [
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "HEALTH": 200,
+                            "MAGIC_RESISTANCE": 20
+                        }
+                    }
+                },
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "PERSONAL_STATISTIC_AURA",
+                    "value": {
+                        "name": "LEGION",
+                        "statistics": {
+                            "MAGIC_RESISTANCE": 20,
+                            "HEALTH_REGENERATION": 10
+                        },
+                        "range": 1100
                     }
                 }
             ]
