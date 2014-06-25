@@ -56,7 +56,9 @@
         "MAIM": {},
         "TRIBUTE": {},
         "SPOILS_OF_WAR": {},
-        "LEGION": {}
+        "LEGION": {},
+        "AVARICE": {},
+        "GREED": {}
     },
     
     "effect_types": {
@@ -160,6 +162,10 @@
         
         "PERSONAL_STATISTIC_AURA": {
             "fields": ["statistics", "range"]   
+        },
+        
+        "GOLD_ON_KILLING_A_UNIT": {
+            "fields": ["gold_granted"]
         }
     },
     
@@ -1575,8 +1581,53 @@
                     }
                 }
             ]
-        }
+        },
         
+        {   
+            "itemCode": 3093,
+            "name": "AVARICE_BLADE",
+            "sellValue": 320,
+            "cost": 400,
+            "tier": "ADVANCED",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [1051],
+            "effects": [
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "CRITICAL_STRIKE_CHANCE": 10
+                        }
+                    }
+                },
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "name": "AVARICE",
+                        "statistics": {
+                            "GOLD_PER_10": 3
+                        }
+                    }
+                },
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "GOLD_ON_KILLING_A_UNIT",
+                    "value": {
+                        "name": "GREED",
+                        "gold_granted": 2
+                    }
+                }
+            ]
+        }
         
     ]
 }
