@@ -166,6 +166,10 @@
         
         "GOLD_ON_KILLING_A_UNIT": {
             "fields": ["gold_granted"]
+        },
+        
+        "TARGETED_MAGIC_DAMAGE_AND_SLOW": {
+            "fields": ["magic_damage_dealt", "slow_effect", "slow_duration", "cooldown", "range"]
         }
     },
     
@@ -1627,7 +1631,48 @@
                     }
                 }
             ]
+        },
+        
+        {   
+            "itemCode": 3144,
+            "name": "BILGEWATER_CUTLASS",
+            "sellValue": 980,
+            "cost": 240,
+            "tier": "LEGENDARY",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [1036, "PLACEHOLDER_VAMPIRIC_SCEPTER"],
+            "effects": [
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "ATTACK_DAMAGE": 25,
+                            "LIFE_STEAL": 8
+                        }
+                    }
+                },
+                
+                {
+                    "type": "UNIQUE_ACTIVE",
+                    "modifier": "TARGETED_MAGIC_DAMAGE_AND_SLOW",
+                    "value": {
+                        "magic_damage_dealt": 100,
+                        "slow_effect": 25,
+                        "slow_duration": 2,
+                        "cooldown": 90,
+                        "range": 500
+                    }
+                }
+            ]
         }
+        
+        
         
     ]
 }
