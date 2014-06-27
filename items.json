@@ -58,7 +58,8 @@
         "SPOILS_OF_WAR": {},
         "LEGION": {},
         "AVARICE": {},
-        "GREED": {}
+        "GREED": {},
+        "VALORS_REWARD": {}
     },
     
     "effect_types": {
@@ -170,10 +171,18 @@
         
         "TARGETED_MAGIC_DAMAGE_AND_SLOW": {
             "fields": ["magic_damage_dealt", "slow_effect", "slow_duration", "cooldown", "range"]
+        },
+        
+        "RESTORATION_ON_TRIGGER": {
+            "fields": ["name", "trigger", "health_restored", "health_over_time_seconds",  "mana_restored", "mana_over_time_seconds"]
         }
     },
     
     "stack_triggers": {
+        "LEVEL_UP": {}
+    },
+    
+    "triggers": {
         "LEVEL_UP": {}
     },
     
@@ -1667,6 +1676,46 @@
                         "slow_duration": 2,
                         "cooldown": 90,
                         "range": 500
+                    }
+                }
+            ]
+        },
+        
+        {   
+            "itemCode": 3010,
+            "name": "CATALYST_THE_PROTECTOR",
+            "sellValue": 840,
+            "cost": 400,
+            "tier": "ADVANCED",
+            "availability": [
+                "SUMMONERS_RIFT",
+                "TWISTED_TREELINE",
+                "HOWLING_ABYSS",
+                "CRYSTAL_SCAR"
+            ],
+            "components": [1027, 1028],
+            "effects": [
+                {
+                    "type": "FLAT_STATISTICS",
+                    "modifier": "STATISTIC",
+                    "value": {
+                        "statistics": {
+                            "HEALTH": 200,
+                            "MANA": 300
+                        }
+                    }
+                },
+                
+                {
+                    "type": "NAMED_PASSIVE",
+                    "modifier": "RESTORATION_ON_TRIGGER",
+                    "value": {
+                        "name": "VALORS_REWARD",
+                        "trigger": "LEVEL_UP",
+                        "health_restored": 150,
+                        "health_over_time_seconds": 8,
+                        "mana_restored": 200,
+                        "mana_over_time_seconds": 8
                     }
                 }
             ]
